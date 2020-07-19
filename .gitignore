@@ -1,1 +1,4 @@
 ambiente
+django/projeto/db.sqlite3
+*sqlite3
+.vscode

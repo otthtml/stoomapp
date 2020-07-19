@@ -1,11 +1,11 @@
 version: "3"
+
+
 services:
-  aplicacao: 
-    build: ./aplicacao
-    ports: ['8085:8085']
-    volumes: ['./aplicacao:/app']
-    image: "flaskfin_img"
-    environment: 
-      - DBSTRING=$DBSTRING
-      - IUGU=$IUGU
-    
+  web:
+    build: django
+    command: python django/projeto/manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
