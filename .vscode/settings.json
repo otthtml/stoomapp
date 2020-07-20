@@ -1,7 +1,7 @@
 {
-    "python.pythonPath": "../django/ambiente",
+    "python.pythonPath": "../django/ambiente/Scripts/python",
     "python.autoComplete.extraPaths": [
-        "./django"
+        "./django/"
     ],
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
