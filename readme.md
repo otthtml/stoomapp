@@ -1,6 +1,6 @@
 #stoomapp
 
-Pequeno projeto usando Docker, TDD e Django.
+Pequeno projeto usando Docker, Testes e Django.
 
 #Como iniciar o projeto?
 O jeito mais fácil de rodar a aplicação é rodando o comando "docker-compose up", que realizará todas as instalações necessárias.
@@ -21,4 +21,4 @@ Após a inicialização da aplicação, basta acessar no navegador de preferênc
 2. "docker-compose down" se estiver usando o Docker Compose
 
 #Executando testes?
-Com o Docker (mas sem precisar rodar o container): Executar no terminal "docker-compose run web python django/projeto/manage.py test"
+Com o ambiente corretamente ativado ou dentro do container Docker, executar, no diretório "stoomapp/django/projeto" o comando "python manage.py test".
